@@ -25,11 +25,11 @@ if($result = mysqli_query($conn,$sql)){
         echo "</tr>";
         while($row = mysqli_fetch_array($result)){
             echo "<tr>";
-            echo "<td>$row['id']</td>";
-            echo "<td>$row['imie']</td>";
-            echo "<td>$row['nazwisko']</td>";
-            echo "<td>$row['email']</td>";
-            echo "<td>$row['reg_data']</td>";
+            echo "<td>".$row['id']."</td>";
+            echo "<td>".$row['imie']."</td>";
+            echo "<td>".$row['nazwisko']."</td>";
+            echo "<td>".$row['email']."</td>";
+            echo "<td>".$row['reg_data']."</td>";
             echo "</tr>";
         }
         echo "</table>";
