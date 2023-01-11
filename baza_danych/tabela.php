@@ -10,7 +10,7 @@ if($conn->connect_error){
 }
 
 $sql = "
-CREATE TABLE znajomi(
+ CREATE TABLE IF NOT EXISTS znajomi(
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     imie VARCHAR(30) NOT NULL,
     nazwisko VARCHAR(30) NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE znajomi(
 ";
 
 if($conn->query($sql)===TRUE){
-    echo "baza danych założona!";
+    echo "tabela utworzonas!";
 }
 else{
     echo "błąd SQL: ".$conn->error;
