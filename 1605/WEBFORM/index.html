@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <style>
+        .wrapper {
+            width: 650;
+            margin: 0 auto;
+        }
+        
+        .page-header h2 {
+            margin-top: 0;
+        }
+        
+        table tr td:last-child a {
+            margin-right: 15px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- body code goes here -->
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header clearfix">
+                        <h2 class="pull-left">Employee Details</h2>
+                        <a href="create.php" class="btn btn-success">Add New Employee</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle = "tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>
