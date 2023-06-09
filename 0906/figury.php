@@ -12,6 +12,7 @@ abstract class Figura{
         $this->b = $b;
      }
 
+
      abstract public function policzPole();
 }
 
@@ -50,6 +51,19 @@ class Trapez extends Figura {
         return ($this->a+$this->b)*$this->h/2;
     }
 }
+
+
+class Kolo extends Figura {
+    public function __construct($a)
+    {
+        parent::__construct($a,$b=0);
+    }
+    public function policzPole(){
+        return M_PI*$this->a*$this->a;
+    }
+}
+
+
 $pr = new Prostokat(9.3,6.7);
 echo "pole prostokąta: {$pr->policzPole()}";
 echo "<br>";
@@ -61,4 +75,9 @@ echo "<br>";
 
 $trp = new Trapez(8.4,6.4,4,8);
 echo "pole trapezu: {$trp->policzPole()}";
+
+echo "<br>";
+
+$tkl = new Kolo(5.5);
+echo "pole trapezu: {$tkl->policzPole()}";
 ?>
